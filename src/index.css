@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,1000&family=Roboto+Slab:wght@200;300;400;500;600&display=swap');
+
+:root{
+  --clr-back-body: #15161A;
+  --clr-violet: #24308d;
+  --clr-violet-hover: #24308d;
+  --clr-white: #f9f9ff;
+  --clr-white-hover: #bfbfc7;
+  --clr-gray: #e2e2e249; 
+  --clr-gray-hover: #e2e2e213; 
+  --clr-btn: #292934; 
+  --clr-btn-hover: #212136; 
+  --clr-border: #e6e0ef1a;
+  --clr-border-hover: #e2e2e2; 
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', serif;
+  font-weight: 700;
+}
+
+body {
+  background-color: var(--clr-back-body);
+  color: var(--clr-white);
+}
+
+a {
+  font-size: 1.1em;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--clr-violet);
+}
+
+a:hover {
+  color: var(--clr-violet-hover);
+}
+
+li{
+  list-style: none;
+  font-size: 1.1em;
+}
+
+h1{
+  font-size: 1.9em;
+}
+
+h2{
+  font-size: 1.7em;
+}
+
+h3{
+  font-size: 1.6em;
+}
+
+h4{
+  font-size: 1.5em;
+}
+
+h5{
+  font-size: 1.3em;
+}
+
+h6{
+  font-size: 1.15em;
+}
+
+p{
+  font-size: 1.4em;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-weight: 700;
+  border: 2px solid transparent;
+}
+
+input{
+  outline: none;
+  border: 2px solid transparent;
+  font-size: .9em;
+}
+
+:is(input:focus, input:hover, button:hover){
+  border: 2px solid var(--clr-violet-hover);
+  background-color: var(--clr-violet-hover);
+  color: var(--clr-white);
+}
+
+input:focus{
+  background-color: var(--clr-btn-hover);
+  color: var(--clr-gray);
+}
+
+select{  
+  background-color: var(--clr-btn);
+  color: var(--clr-white);
+  border-radius: .5em;
+  padding: .3em .9em;
+  outline: none;
+  border: 2px solid transparent;
+}
+
+:is(select:hover, select:focus){
+  border: 2px solid var(--clr-primary);
+}
